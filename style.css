@@ -7,7 +7,7 @@ a {
     text-decoration: none;
     color: #d1fae5;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 img {
@@ -37,17 +37,23 @@ img {
     background-color: #047857;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
-
+    grid-template-rows: 70px 2fr 3fr;
+    justify-content: center;
+    align-items: start;
+    padding-top: 15px;
 }
+
+
 
 .bar1 {
     display: grid;
+    gap: 15px;
 
 }
 
 .bar2 {
     display: grid;
+    gap: 15px;
 }
 /*  */
 .header {
@@ -62,25 +68,71 @@ img {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #d1d5db;
+    gap: 15px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.1) inset; 
+    /* https://www.cssmatic.com/box-shadow */
 }
 
 .projects {
     grid-area: 1/1/3/2;
     display: grid;
     grid-template-rows: max-content 1fr;
+
 }
 
 .projects > .card {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 15px;
+}
+
+.item {
+    background-color: white; 
+}
+
+.card >.item {
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
 }
 
 .announcements {
     grid-area: 1/2/2/3;
     display: grid;
+    grid-template-rows: max-content 1fr 1fr 1fr ;
 }
+.announcements > .a1 {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;   
+}
+.announcements > .a3 {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
 
 .trending {
     grid-area: 2/2/3/3;
     display: grid;
+    grid-template-rows: max-content 1fr 1fr 1fr 1fr;
+}
+.trending > div:nth-of-type(1){
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;   
+
+}
+
+.trending > div:nth-last-child(1) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
+
+}
+
+.trending > .item {
+    box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.05);
 }
