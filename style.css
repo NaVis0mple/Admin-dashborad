@@ -15,6 +15,13 @@ img {
     height: 30px;
 }
 
+.headerimage {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
  .svg-icon {   
     /*  to change svg color 2ways  
     1.edit svg fill:#fff in <path> 
@@ -108,11 +115,14 @@ img {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;   
 }
+.announcements > .item {
+    box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.05);
+}
 .announcements > .a3 {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
 }
-
 
 
 .trending {
