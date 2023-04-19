@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Admin-dashboard</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
@@ -76,18 +80,23 @@
             </div>
         </div>
         <div class="header">
-            <div>
+            <div class="searchPart">
                 <label for="search"><img  src="./svg/magnify.svg"></label>
                 <input type="search" name="search" id="search">
             </div>
-            <div>
-                ring
-            </div>
-            <div>
+            <div class="ringPart">
+                <img src="./svg/bell-ring-outline.svg">
                 <img class="headerimage" src="profileimg/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" alt="profileimg">
-                hi there
+                <div>Leo Nguyen</div>
             </div>
-            <div>
+            <div class="hiPart">
+                <img class="headerimage" src="profileimg/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" alt="profileimg">
+                <div>
+                    <div>Hi there,</div>
+                    <div class="name">Leo Nguyen(@leo)</div>
+                </div>
+            </div>
+            <div class="buttonPart">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
@@ -97,12 +106,30 @@
             <div class="projects">
                 <p>Your Projects</p>    
                 <div class="card">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>    
+                    <div class="item">
+                        <div class="cardtitle">Counter-Strike: Global Offensive</div>
+                        <div class="cardinfo">Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).</div>
+                    </div>
+                    <div class="item">
+                        <div class="cardtitle">Dota 2</div>
+                        <div class="cardinfo">Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.</div>
+                    </div>
+                    <div class="item">
+                        <div class="cardtitle">Grand Theft Auto V</div>
+                        <div class="cardinfo">Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.</div>
+                    </div>
+                    <div class="item">
+                        <div class="cardtitle">Wallpaper Engine</div>
+                        <div class="cardinfo">Use stunning live wallpapers on your desktop. Animate your own images to create new wallpapers or import videos/websites and share them on the Steam Workshop!</div>
+                    </div>
+                    <div class="item">
+                        <div class="cardtitle">Terraria</div>
+                        <div class="cardinfo">Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!</div>
+                    </div>
+                    <div class="item">
+                        <div class="cardtitle">Euro Truck Simulator 2</div>
+                        <div class="cardinfo">Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.</div>
+                    </div>
                 </div>
             </div>
             <div class="announcements">

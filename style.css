@@ -1,6 +1,7 @@
 html, body {
     height: 100%; /* set the height of the html and body elements to 100% */
     margin: 0;
+    font-family: 'Roboto', sans-serif;
   }
 
 a {
@@ -14,6 +15,32 @@ img {
     width: 30px;
     height: 30px;
 }
+input {
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: #d1d5db;
+    padding: 5px 7px;
+    outline:  none;
+}
+input:focus {
+    border-width: 0.5px;
+    border-style:solid;
+    border-color: #d1d5db;
+}
+
+button {
+    border-radius: 25px;
+    outline: none;
+    border-style: none;
+    padding: 10px 25px;
+    background-color: #047857;
+    color: #d1fae5;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+}
+
 
 .headerimage {
     width: 50px;
@@ -22,7 +49,7 @@ img {
     border-radius: 50%;
 }
 
- .svg-icon {   
+.svg-icon {   
     /*  to change svg color 2ways  
     1.edit svg fill:#fff in <path> 
     2.use this https://codepen.io/sosuke/pen/Pjoqqp */
@@ -68,7 +95,46 @@ img {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
+    align-items: center;
+    padding-left: 20px;
 }
+.header .searchPart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 50px;
+}
+.header .searchPart input {
+    flex: 1;
+}
+
+.header > .ringPart {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header > .hiPart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .hiPart .name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header .buttonPart {
+    display: flex;
+    gap: 15px;
+    padding-left: 100px;
+}
+
+
 /*  */
 .main {
     grid-area: 2 / 2 / 3 / 3;
@@ -104,7 +170,12 @@ img {
 .card >.item {
     border-radius: 8px;
     box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    border-left: 8px solid #047857;
 }
+
+
 
 .announcements {
     grid-area: 1/2/2/3;
